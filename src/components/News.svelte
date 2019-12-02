@@ -27,7 +27,7 @@
   }
 
   const handleError = ({ target }) => {
-    target.src = "/../noun_world_2994087.svg";
+    target.src = "/../default bg.png";
   };
 
   function truncateString(str, num) {
@@ -39,15 +39,34 @@
 </script>
 
 <style>
+  .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+    width: 984px;
+    height: 230px;
+  }
   figure {
     margin: 1em 1em 1em 0;
   }
   img {
     max-width: 250px;
-    margin: 0 0 1em 0;
-    height: 80%;
+    max-height: 200px;
+    margin: 1em 0 1em 0;
+    width: 100%;
+    height: 100%;
   }
-  .content {
+  .one {
+    width: 40%;
+  }
+
+  .two {
+    width: 60%;
+    text-align: justify;
+    padding-left: 30px;
+  }
+  /* .content {
     display: flex;
     justify-content: flex-start;
     border-bottom: 1px solid black;
@@ -64,7 +83,7 @@
     color: #555555;
     text-align: justify;
     padding: 0px 0px 0px 50px;
-  }
+  } */
 
   /* Loading animation */
 
@@ -99,7 +118,34 @@
 <!-- Content Block Begins -->
 
 {#each articles as article, i}
-  <div class="content">
+  <div class="main">
+    <div class="one image">
+      <figure>
+        <img src={article.urlToImage} alt="ff" on:error={handleError} />
+      </figure>
+    </div>
+
+    <div class="one">
+      <p>
+        <i>
+          <b>{truncateString(article.title, 99)}</b>
+        </i>
+      </p>
+    </div>
+
+    <div class="two">
+      <p>
+        {truncateString(article.content, 250)}
+        <a href={article.url} target="_blank">Full Story</a>
+      </p>
+    </div>
+
+    <!--  <div class="one">
+      <p>{truncateString(article.content, 89)}</p>
+    </div> -->
+
+  </div>
+  <!-- <div-- class="content">
     <div class="writeup">
 
       <figure>
@@ -119,7 +165,7 @@
       </p>
     </div>
 
-  </div>
+  </div-->
 {:else}
   <div class="loader">
     <div class="circle" />
