@@ -27,8 +27,7 @@
   }
 
   const handleError = ({ target }) => {
-    target.src =
-      "https://avatars2.githubusercontent.com/u/19534082?s=400&u=54b663d6cc408ef3fd2ca6b054f4e86aa8e7a025&v=4";
+    target.src = "/../noun_world_2994087.svg";
   };
 
   function truncateString(str, num) {
@@ -70,8 +69,8 @@
   /* Loading animation */
 
   .circle {
-    width: 30px;
-    height: 30px;
+    width: 10px;
+    height: 10px;
     background-color: #000000;
     border-radius: 50%;
     animation: move 2s cubic-bezier(0.41, 0.83, 0.63, 0.24) infinite;
@@ -104,12 +103,15 @@
     <div class="writeup">
 
       <figure>
-        <img alt="deadimg" src={article.urlToImage} on:error={handleError} />
+        <img
+          alt="caption image"
+          src={article.urlToImage}
+          on:error={handleError} />
       </figure>
 
       <p>{article.title}</p>
       <i>
-        <p class="cont">{article.description}</p>
+        <p class="cont">{truncateString(article.description, 100)}</p>
       </i>
       <p class="cont">
         {article.content}
