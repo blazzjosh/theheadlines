@@ -139,33 +139,7 @@
         <a href={article.url} target="_blank">Full Story</a>
       </p>
     </div>
-
-    <!--  <div class="one">
-      <p>{truncateString(article.content, 89)}</p>
-    </div> -->
-
   </div>
-  <!-- <div-- class="content">
-    <div class="writeup">
-
-      <figure>
-        <img
-          alt="caption image"
-          src={article.urlToImage}
-          on:error={handleError} />
-      </figure>
-
-      <p>{article.title}</p>
-      <i>
-        <p class="cont">{truncateString(article.description, 100)}</p>
-      </i>
-      <p class="cont">
-        {article.content}
-        <a href="##">{article.source.name}</a>
-      </p>
-    </div>
-
-  </div-->
 {:else}
   <div class="loader">
     <div class="circle" />
