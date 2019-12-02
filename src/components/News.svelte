@@ -66,26 +66,6 @@
     text-align: justify;
     padding-left: 30px;
   }
-  /* .content {
-    display: flex;
-    justify-content: flex-start;
-    border-bottom: 1px solid black;
-    width: 984px;
-    height: 258px;
-  }
-  .writeup {
-    margin: 1em 1em 1em 2em;
-    display: flex;
-    justify-content: flex-start;
-  }
-  .cont {
-    font-size: 14px;
-    color: #555555;
-    text-align: justify;
-    padding: 0px 0px 0px 50px;
-  } */
-
-  /* Loading animation */
 
   .circle {
     width: 10px;
@@ -146,5 +126,3 @@
     <p>Loading</p>
   </div>
 {/each}
-
-<!-- Content Block Ends -->
