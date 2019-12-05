@@ -101,7 +101,10 @@
   <div class="main">
     <div class="one image">
       <figure>
-        <img src={article.urlToImage} alt="ff" on:error={handleError} />
+        <img
+          src={article.urlToImage == null ? '/../default bg.png' : article.urlToImage}
+          alt="ff"
+          on:error={handleError} />
       </figure>
     </div>
 
