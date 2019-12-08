@@ -34,6 +34,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 30px;
+    height: 10px;
   }
   @media (min-width: 480px) {
     /* h1 {
@@ -47,7 +49,7 @@
 </svelte:head>
 
 <div class="logo">
-  <svg
+  <!-- <svg
     xmlns="http://www.w3.org/2000/svg"
     width="306"
     height="62"
@@ -61,7 +63,8 @@
       font-family="Chomsky">
       <tspan x="0" y="0">The Lasgidi Times</tspan>
     </text>
-  </svg>
+  </svg> -->
+  <img src="/../../../Logz.png" alt="ff" />
 </div>
 
 <!-- <h1>LASGIDI TIMES</h1> -->
