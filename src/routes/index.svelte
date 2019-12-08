@@ -33,9 +33,6 @@
   .logo {
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 30px;
-    height: 10px;
   }
   @media (min-width: 480px) {
     /* h1 {
@@ -49,30 +46,8 @@
 </svelte:head>
 
 <div class="logo">
-  <!-- <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="306"
-    height="62"
-    viewBox="0 0 306 62">
-    <text
-      id="The_Lasgidi_Times"
-      data-name="The Lasgidi Times"
-      transform="translate(0 45)"
-      fill="#00000"
-      font-size="40"
-      font-family="Chomsky">
-      <tspan x="0" y="0">The Lasgidi Times</tspan>
-    </text>
-  </svg> -->
-  <img src="/../../../Logz.png" alt="ff" />
+  <img src="Untitled-1.svg" alt="logo" />
 </div>
-
-<!-- <h1>LASGIDI TIMES</h1> -->
-
-<!-- <figure>
-  <img alt="Borat" src="great-success.png" />
-  <figcaption>HIGH FIVE!</figcaption>
-</figure> -->
 
 <p>
   <strong>Top Trending Headlines currated for you</strong>
